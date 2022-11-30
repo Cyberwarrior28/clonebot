@@ -1,0 +1,32 @@
+{
+  "name": "clonebot-ui",
+  "description": "Telegram's best Open Source ALL-In-One Multi Purpose RoBot. Create your Fork now.",
+  "keywords": ["telegram", "best", "Media", "cloning", "copying", "robot"],
+  "logo": "https://cdn.dribbble.com/users/1658045/screenshots/4999712/clonelogo-01.png",
+  "website": "https://github.com/m4mallu/conebot",
+  "repository": "https://github.com/Cyberwarrior28/clonebot.git",
+  "env": {
+        "APP_ID": {"description": "24466148", "required": true},
+        "API_HASH": {"description": "fef0318d664231c11041ef99b14d70a8" , "required": true},
+        "TG_BOT_TOKEN": {"description": "5777299503:AAHIH3nY7PTIxUS_lU3gExVCYyESjOhJQZw","required": true},
+        "TG_USER_SESSION": {"description": "BQF1UuQAoSBAm27m-YYJ0ik3aCfLsjJqq864gpuhrafFD_iYMjav3IwVXa4vu3IrxtucNw-yIduLCAPruSh-OnYlak8c7vZhXdQ6BmGkYymeu4s01Zo43G8PUOY027fmpX1RNnZNxhuK13ktfkRhMUDxNZS6Gz4NTe9mRIbqdf1ulrC_vX2vwIuoDHOk8iNe3xDhjfTj0sdLVy-A4LLM1luoE5k-x07roTy6AmgdGR4VFn1T7XlJJmFxkAGzoFPcwcKE6JQ6JegV-14wfmvC-wPghJycrnSzLBFrJJoKv0NI2uHRsitr4BO46WefMqYh6snBe2JF2HWUfnQSbIFVA0Lw39TZFgAAAAA2WIdZAA","required": true},
+        "ENV": {"description": "Set this to ANYTHING","value": "ANYTHING"}
+  },
+  "addons": [
+    {
+    "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
+    }
+  ],
+  "buildpacks": [
+    {"url": "https://github.com/Cyberwarrior28/clonebot.git"}
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
